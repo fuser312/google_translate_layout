@@ -19,8 +19,7 @@ class _googleTranslateState extends State<googleTranslate> {
       appBar: AppBar(
         backgroundColor: Colors.blue.shade600,
         leading: IconButton(
-          icon: Icon(Icons.menu,),
-          color: Colors.white,
+          icon: Icon(Icons.menu, color: Colors.white,),
         ),
         title: Row(
           children: <Widget>[
@@ -42,51 +41,83 @@ class _googleTranslateState extends State<googleTranslate> {
       body: Column(
         children: <Widget>[
           Container(
-            margin: EdgeInsets.fromLTRB(16, 8, 0, 4),
+            margin: EdgeInsets.fromLTRB(16, 8, 16, 4),
             color: Colors.white,
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                Text("English",
-                  style: TextStyle(
-                    color: Colors.blue,
-                    fontSize: 20,
+                   Column(
+                    children: <Widget>[
+                      Container(
+                        alignment: Alignment.topLeft,
+                        child: Text("English",
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontSize: 20,
+                          ),
+                          //textAlign: TextAlign.end,
+                        ),
+                      ),
+                    ],
                   ),
-                  textAlign: TextAlign.end,
-                ),
-                Container(
-                  alignment: Alignment.centerLeft,
-                  child: Icon(
-                    Icons.arrow_drop_down,
-                    color: Colors.blue,
-                    size: 24,
+
+                  Column(
+                    children: <Widget>[
+                      Container(
+                        //alignment: Alignment.centerRight,
+                        child: Icon(
+                          Icons.arrow_drop_down,
+                          color: Colors.blue,
+                          size: 24,
+                        ),
+                      ),
+                    ],
                   ),
-                ),
-                Container(
-                  margin: EdgeInsets.fromLTRB(56, 0, 0, 0),
-                  child: Icon(
-                    Icons.compare_arrows,
-                    color: Colors.blue,
-                    size: 24,
+
+
+                  Column(
+                    children: <Widget>[
+                      Container(
+                        alignment: Alignment.center,
+                        //margin: EdgeInsets.fromLTRB(56, 0, 0, 0),
+                        child: Icon(
+                          Icons.compare_arrows,
+                          color: Colors.blue,
+                          size: 24,
+                        ),
+                      ),
+                    ],
                   ),
-                ),
-                Container(
-                  margin: EdgeInsets.fromLTRB(40, 0, 0, 0),
-                  child: Text(
-                    "Indonesian",
-                    style: TextStyle(
-                      color: Colors.blue,
-                      fontSize: 20,
-                    ),
+
+                Column(
+                    children: <Widget>[
+                      Container(
+                        alignment: Alignment.topRight,
+                        //margin: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                        child: Text(
+                          "Indonesian",
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                ),
-                Container(
-                  alignment: Alignment.centerLeft,
-                  child: Icon(
-                    Icons.arrow_drop_down,
-                    color: Colors.blue,
-                    size: 24,
+
+                Column(
+                    children: <Widget>[
+                      Container(
+                        alignment: Alignment.centerLeft,
+                        child: Icon(
+                          Icons.arrow_drop_down,
+                          color: Colors.blue,
+                          size: 24,
+                        ),
+                      ),
+                    ],
                   ),
-                ),
+
               ],
             ),
           ),
